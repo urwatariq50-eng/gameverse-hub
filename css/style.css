@@ -135,3 +135,25 @@ border:2px solid #00E5FF;
 .search:focus{
 box-shadow:0 0 15px #00E5FF;
 }
+.card{
+    background:#1A1A1A;
+    border:1px solid #333;
+    border-radius:15px;
+    padding:25px;
+    margin:20px 0;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    border-color:#E11D48;
+    box-shadow:0 0 20px #E11D48;
+}
+
+.card h3{
+    color:#00E5FF;
+}
+
+.card p{
+    color:#ddd;
+}
