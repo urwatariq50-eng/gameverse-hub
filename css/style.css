@@ -99,22 +99,26 @@ nav a:hover{
     border-radius:15px;
     padding:25px;
     margin:20px 0;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    border-color:#00E5FF;
-    box-shadow:0 0 20px rgba(0,229,255,.5);
+    transform:scale(1.03);
+    border-color:#E11D48;
+    box-shadow:0 0 20px #E11D48;
 }
 
 .card h3{
-    color:#E11D48;
+    color:#00E5FF;
     margin-bottom:10px;
 }
 
-footer{
-    text-align:center;
+.card p{
+    color:#DDDDDD;
+}
+
+footerer{
+    tt-align:cecenter;
     padding:30px;
     background:#111111;
     border-top:2px solid #E11D48;
@@ -134,26 +138,4 @@ border:2px solid #00E5FF;
 
 .search:focus{
 box-shadow:0 0 15px #00E5FF;
-}
-.card{
-    background:#1A1A1A;
-    border:1px solid #333;
-    border-radius:15px;
-    padding:25px;
-    margin:20px 0;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:scale(1.03);
-    border-color:#E11D48;
-    box-shadow:0 0 20px #E11D48;
-}
-
-.card h3{
-    color:#00E5FF;
-}
-
-.card p{
-    color:#ddd;
 }
