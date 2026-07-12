@@ -41,15 +41,16 @@ nav a:hover{
 }
 
 .hero{
-    min-height:80vh;
+    min-height:90vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
     padding:20px;
-    background:linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-    radial-gradient(circle,#1a1a1a,#0D0D0D);
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+    url("https://images.unsplash.com/photo-1542751110-97427bbecf20?w=1600") center/cover no-repeat;
 }
 
 .hero h1{
