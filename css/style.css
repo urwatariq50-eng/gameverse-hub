@@ -140,3 +140,30 @@ border:2px solid #00E5FF;
 .search:focus{
 box-shadow:0 0 15px #00E5FF;
 }
+footer{
+    background:#111111;
+    padding:40px 20px;
+    text-align:center;
+    border-top:2px solid #E11D48;
+}
+
+footer h2{
+    color:#00E5FF;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#cccccc;
+    margin:10px 0;
+}
+
+footer a{
+    color:#E11D48;
+    text-decoration:none;
+    margin:0 10px;
+    transition:0.3s;
+}
+
+footer a:hover{
+    color:#00E5FF;
+}
