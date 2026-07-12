@@ -11,17 +11,42 @@ body{
 }
 
 header{
+    position:sticky;
+    top:0;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
-    background:#111111;
+    padding:18px 8%;
+    background:rgba(10,10,10,0.95);
+    backdrop-filter:blur(10px);
     border-bottom:2px solid #E11D48;
-    position:sticky;
-    top:0;
+    z-index:1000;
 }
 
 .logo{
+    font-size:30px;
+    font-weight:700;
+    color:#00E5FF;
+    text-shadow:0 0 15px #00E5FF;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00E5FF;
+    text-shadow:0 0 10px #00E5FF;
+} o{
     font-size:28px;
     font-weight:bold;
     color:#00E5FF;
