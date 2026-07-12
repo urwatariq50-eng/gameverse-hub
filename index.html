@@ -14,102 +14,90 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#0b1120;
+background:#0d1117;
 color:white;
 }
 
 header{
-background:#111827;
-padding:20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:20px 50px;
+background:#161b22;
+position:sticky;
+top:0;
 }
 
 .logo{
 font-size:30px;
 font-weight:bold;
-color:#00d4ff;
+color:#00c8ff;
 }
 
 nav a{
 color:white;
 text-decoration:none;
 margin-left:20px;
-font-weight:bold;
 }
 
 .hero{
 text-align:center;
-padding:100px 20px;
-background:linear-gradient(90deg,#111827,#1e3a8a);
+padding:120px 20px;
+background:linear-gradient(135deg,#001f3f,#0d1117);
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:20px;
+font-size:55px;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:30px;
+font-size:22px;
+color:#ccc;
+margin-bottom:25px;
 }
 
-button{
+.btn{
+display:inline-block;
 padding:15px 35px;
-font-size:18px;
-background:#00d4ff;
-border:none;
+background:#00c8ff;
+color:black;
+text-decoration:none;
 border-radius:8px;
-cursor:pointer;
+font-weight:bold;
 }
 
-.games{
-padding:50px 20px;
+.section{
+padding:60px 30px;
 }
 
-.games h2{
+.section h2{
 text-align:center;
 margin-bottom:40px;
+color:#00c8ff;
 }
 
-.cards{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
 .card{
-background:#1f2937;
-width:280px;
+background:#161b22;
+padding:20px;
 border-radius:12px;
-overflow:hidden;
-transition:.3s;
+transition:0.3s;
 }
 
 .card:hover{
 transform:translateY(-8px);
 }
 
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-}
-
-.card h3{
-padding:15px;
-}
-
-.card p{
-padding:0 15px 20px;
-}
-
 footer{
-background:#111827;
-padding:20px;
+background:#161b22;
 text-align:center;
+padding:30px;
 margin-top:50px;
 }
 </style>
@@ -130,34 +118,61 @@ margin-top:50px;
 </header>
 
 <section class="hero">
-<h1>Level Up Your Gaming Experience</h1>
-<p>Latest Gaming News • Reviews • Guides</p>
+<h1>Welcome to GameVerse Hub</h1>
+<p>Your Home for Gaming News, Reviews & Guides</p>
 
-<button>Explore Now</button>
+<a href="#" class="btn">Explore Games</a>
 </section>
 
-<section class="games">
+<section class="section">
 
-<h2>Trending Games</h2>
+<h2>🔥 Trending Games</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?w=800" alt="">
-<h3>Cyber Adventure</h3>
-<p>Explore futuristic worlds and epic battles.</p>
+<h3>GTA VI</h3>
+<p>Latest trailers, gameplay, and release updates.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="">
-<h3>Battle Arena</h3>
-<p>Compete with players from around the world.</p>
+<h3>Call of Duty</h3>
+<p>Season updates, weapons, and multiplayer tips.</p>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800" alt="">
-<h3>Racing Legends</h3>
-<p>Feel the speed with realistic racing action.</p>
+<h3>Minecraft</h3>
+<p>Build ideas, survival guides, and mods.</p>
+</div>
+
+<div class="card">
+<h3>EA FC 26</h3>
+<p>Ultimate Team, career mode, and player ratings.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>📰 Latest News</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Gaming News</h3>
+<p>Read the latest gaming updates from around the world.</p>
+</div>
+
+<div class="card">
+<h3>Reviews</h3>
+<p>Honest reviews of new games and gaming hardware.</p>
+</div>
+
+<div class="card">
+<h3>Guides</h3>
+<p>Tips, tricks, and walkthroughs for your favorite games.</p>
 </div>
 
 </div>
@@ -166,7 +181,7 @@ margin-top:50px;
 
 <footer>
 
-© 2026 GameVerse Hub
+© 2026 GameVerse Hub | Built by Urwa Tariq
 
 </footer>
 
