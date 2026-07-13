@@ -1,16 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
+const search = document.querySelector(".search");
 
-    const cards = document.querySelectorAll(".card");
+if (search) {
+    search.addEventListener("keyup", function () {
 
-    cards.forEach((card, index) => {
-        card.style.opacity = "0";
-        card.style.transform = "translateY(30px)";
+        const value = this.value.toLowerCase();
+        const cards = document.querySelectorAll(".card");
 
-        setTimeout(() => {
-            card.style.transition = "0.6s ease";
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-        }, index * 200);
+        cards.forEach(card => {
+            const text = card.innerText.toLowerCase();
+
+            if (text.includes(value)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+
     });
-
-});
+}
