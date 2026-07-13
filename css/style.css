@@ -59,7 +59,6 @@ nav a{
 
 nav a:hover{
     background:#E11D48;
-    color:#fff;
 }
 
 /* HERO */
@@ -72,11 +71,45 @@ nav a:hover{
     align-items:center;
     text-align:center;
     padding:30px;
-
     background:
     linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
     url("https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
 
+.hero h1{
+    font-size:60px;
+    margin-bottom:15px;
+    text-shadow:0 0 20px #00E5FF;
+}
+
+.hero p{
+    font-size:24px;
+    margin-bottom:25px;
+}
+
+.search{
+    width:400px;
+    max-width:95%;
+    padding:15px;
+    border-radius:40px;
+    border:2px solid #00E5FF;
+    background:#1a1a1a;
+    color:white;
+    outline:none;
+    font-size:18px;
+}
+
+.search:focus{
+    box-shadow:0 0 15px #00E5FF;
+}
+
+.button{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:#E11D48;
    /* GAMES */
 
 .games{
@@ -103,7 +136,7 @@ nav a:hover{
     background:#171b22;
     border:1px solid #2b2b2b;
     border-radius:18px;
-    padding:20px;
+    overflow:hidden;
     transition:.35s;
 }
 
@@ -115,29 +148,33 @@ nav a:hover{
 
 .card img{
     width:100%;
-    height:200px;
+    height:220px;
     object-fit:cover;
-    border-radius:12px;
-    margin-bottom:15px;
+    display:block;
 }
 
 .card h3{
     color:#00E5FF;
-    margin-bottom:10px;
+    padding:15px 20px 5px;
 }
 
 .card p{
     color:#d7d7d7;
+    padding:0 20px 20px;
+}
+
+.card .button{
+    margin:0 20px 20px;
 }
 
 /* FOOTER */
 
 footer{
-    margin-top:60px;
     background:#111;
     border-top:2px solid #E11D48;
-    text-align:center;
     padding:40px 20px;
+    text-align:center;
+    margin-top:60px;
 }
 
 footer h2{
@@ -152,7 +189,6 @@ footer p{
 footer a{
     color:#fff;
     text-decoration:none;
-    margin:0 8px;
 }
 
 footer a:hover{
@@ -163,8 +199,12 @@ footer a:hover{
 
 @media (max-width:768px){
 
+header{
+    padding:15px;
+}
+
 .logo{
-    font-size:26px;
+    font-size:28px;
 }
 
 nav{
@@ -172,14 +212,42 @@ nav{
 }
 
 nav a{
-    padding:8px 12px;
-    font-size:15px;
+    font-size:14px;
+    padding:8px 10px;
 }
 
 .hero{
-    min-height:75vh;
+    min-height:70vh;
     padding:20px;
 }
 
 .hero h1{
-    font-size:42
+    font-size:40px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.search{
+    width:100%;
+}
+
+.games h2{
+    font-size:28px;
+}
+
+.games-grid{
+    grid-template-columns:1fr;
+}
+
+.card img{
+    height:200px;
+}
+
+.button{
+    display:block;
+    text-align:center;
+}
+
+}
