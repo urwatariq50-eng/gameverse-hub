@@ -191,7 +191,7 @@ footer{
 @media(min-width:992px){
 
 .top-bar{
-    display:none;
+    display:flex;
 }
 
 header{
