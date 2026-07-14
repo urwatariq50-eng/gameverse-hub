@@ -1,25 +1,33 @@
-// ===============================
-// GAMEVERSE HUB
-// Main JavaScript
-// ===============================
+// ===========================
+// GAMEVERSE HUB MENU
+// ===========================
 
-// Mobile Menu Toggle
+const menu = document.getElementById("navMenu");
+
 function toggleMenu() {
-    document.getElementById("mobileMenu").classList.toggle("show");
+    menu.classList.toggle("show");
 }
 
-// Close menu after clicking a link (mobile)
-const navLinks = document.querySelectorAll("#mobileMenu a");
-
-navLinks.forEach(link => {
+// Close menu when a link is clicked (mobile only)
+document.querySelectorAll("#navMenu a").forEach(link => {
     link.addEventListener("click", () => {
-        document.getElementById("mobileMenu").classList.remove("show");
+        if (window.innerWidth < 992) {
+            menu.classList.remove("show");
+        }
     });
 });
 
-// Close menu when window is resized to desktop
-window.addEventListener("resize", () => {
-    if (window.innerWidth >= 992) {
-        document.getElementById("mobileMenu").classList.remove("show");
+// Close menu if user taps outside it
+document.addEventListener("click", function(e) {
+
+    const menuBtn = document.querySelector(".menu-btn");
+
+    if (
+        window.innerWidth < 992 &&
+        !menu.contains(e.target) &&
+        !menuBtn.contains(e.target)
+    ) {
+        menu.classList.remove("show");
     }
+
 });
