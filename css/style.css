@@ -421,109 +421,63 @@ SCROLLBAR
 MOBILE
 =========================== */
 
-@media(max-width:991px){
+@media (max-width:768px){
 
 header{
-    flex-direction:column;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:90px;
+    display:flex;
+    justify-content:space-between;
     align-items:center;
     padding:15px 20px;
+    background:#111;
+    z-index:1000;
 }
 
 .logo img{
-    height:55px;
-    margin-bottom:10px;
+    height:60px;
+}
+
+.menu-toggle{
+    display:block;
+    font-size:36px;
+    color:#00e5ff;
+    cursor:pointer;
 }
 
 nav{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:8px;
-}
-
-.hero{
-    padding:120px 20px 60px;
-}
-
-.hero h1{
-    font-size:48px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-.games,
-.news-section{
-    padding:70px 20px;
-}
-
-.games h2,
-.news-section h2{
-    font-size:34px;
-}
-
-.card img{
-    height:200px;
-}
-
-}
-
-@media(max-width:768px){
-
-.hero h1{
-    font-size:38px;
-}
-
-.hero p{
-    font-size:17px;
-}
-
-.search{
+    position:fixed;
+    top:90px;
+    left:-100%;
     width:100%;
+    height:calc(100vh - 90px);
+    background:#111;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:center;
+    transition:.35s;
+    padding-top:30px;
 }
 
-.games-grid,
-.news-grid{
-    grid-template-columns:1fr;
-}
-
-.button{
-    width:100%;
-    text-align:center;
-}
-
-footer h2{
-    font-size:28px;
-}
-
-}
-
-@media(max-width:480px){
-
-.logo img{
-    height:45px;
+nav.active{
+    left:0;
 }
 
 nav a{
-    font-size:14px;
-    padding:8px 12px;
-}
-
-.hero h1{
-    font-size:30px;
-}
-
-.hero p{
-    font-size:16px;
-}
-
-.games h2,
-.news-section h2{
+    width:90%;
+    text-align:center;
+    padding:18px;
+    margin:8px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
     font-size:28px;
 }
 
-.card h3{
-    font-size:22px;
+.hero{
+    padding-top:90px;
 }
 
 }
