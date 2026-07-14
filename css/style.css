@@ -102,9 +102,18 @@ header{
 }
 
 .hero h1{
-    font-size:60px;
+    font-size:72px;
+    font-weight:800;
     margin-bottom:15px;
     color:#00e5ff;
+    text-transform:uppercase;
+    letter-spacing:4px;
+
+    text-shadow:
+        0 0 8px #00e5ff,
+        0 0 18px #00e5ff,
+        0 0 35px #00e5ff,
+        0 0 60px #00e5ff;
 }
 
 .hero p{
