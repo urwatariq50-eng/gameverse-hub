@@ -52,9 +52,10 @@ header{
 }
 
 .logo img{
-    height:65px;
+    height:120px;
     width:auto;
-    display:block;
+    max-height:120px;
+}
 }
 
 nav{
