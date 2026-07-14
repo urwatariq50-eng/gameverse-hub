@@ -31,6 +31,10 @@ img{
 
 /* HEADER */
 
+/* ===========================
+   PROFESSIONAL HEADER
+=========================== */
+
 header{
     position:fixed;
     top:0;
@@ -38,43 +42,89 @@ header{
     width:100%;
     background:#111;
     border-bottom:2px solid #E11D48;
-    padding:15px 20px;
-    z-index:9999;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    z-index:1000;
 }
 
-.logo{
-    width:140px;
-    margin:0 auto 15px;
+.header-container{
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+    padding:15px 20px;
 }
 
 .logo img{
-    width:100%;
+    width:120px;
     height:auto;
     display:block;
 }
- 
-nav{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:18px;
+
+.menu-btn{
+    font-size:32px;
+    color:#fff;
+    cursor:pointer;
+    user-select:none;
+    display:block;
 }
 
-nav a{
+#navMenu{
+    display:none;
+    flex-direction:column;
+    background:#111;
+    width:100%;
+    text-align:center;
+}
+
+#navMenu.show{
+    display:flex;
+}
+
+#navMenu a{
+    color:#fff;
+    padding:16px;
     font-size:18px;
     font-weight:600;
-    padding:8px 12px;
+    border-top:1px solid rgba(255,255,255,.08);
+    transition:.3s;
 }
 
+#navMenu a:hover{
+    background:#E11D48;
+}
+
+/* Desktop */
+
+@media (min-width:992px){
+
+.menu-btn{
+    display:none;
+}
+
+.header-container{
+    padding:15px 40px;
+}
+
+.logo img{
+    width:170px;
+}
+
+#navMenu{
+    display:flex !important;
+    flex-direction:row;
+    width:auto;
+    background:none;
+}
+
+#navMenu a{
+    border:none;
+    padding:12px 18px;
+}
+
+}
+
+/* Push page below fixed header */
+
 body{
-    padding-top:180px;
+    padding-top:90px;
 }
 
 /* HERO */
