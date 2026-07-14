@@ -16,7 +16,7 @@ body{
     background:#090b14;
     color:#fff;
     overflow-x:hidden;
-    padding-top:80px;
+    padding-top:150px;
 }
 
 a{
@@ -47,7 +47,11 @@ header{
 }
 
 .logo{
-    width:110px;
+    width:140px;
+    margin:0 auto 15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .logo img{
@@ -55,7 +59,7 @@ header{
     height:auto;
     display:block;
 }
-
+ 
 nav{
     display:flex;
     flex-wrap:wrap;
@@ -371,8 +375,8 @@ MOBILE
 
 header{
     flex-direction:column;
-    height:auto;
-    padding:15px;
+    align-items:center;
+    padding:15px 20px;
 }
 
 .logo img{
