@@ -1,16 +1,34 @@
-// ===========================
-// GAMEVERSE HUB MENU
-// ===========================
+// ===============================
+// GAMEVERSE HUB
+// JavaScript
+// ===============================
 
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector("nav");
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-menuToggle.addEventListener("click", () => {
-    nav.classList.toggle("active");
+// Open / Close Menu
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("show");
+
+    if (mobileMenu.classList.contains("show")) {
+        menuBtn.innerHTML = "✖";
+    } else {
+        menuBtn.innerHTML = "☰";
+    }
 });
 
-document.querySelectorAll("nav a").forEach(link => {
+// Close menu after clicking a link
+document.querySelectorAll("#mobileMenu a").forEach(link => {
     link.addEventListener("click", () => {
-        nav.classList.remove("active");
+        mobileMenu.classList.remove("show");
+        menuBtn.innerHTML = "☰";
     });
+});
+
+// Close menu when switching to desktop
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 992) {
+        mobileMenu.classList.remove("show");
+        menuBtn.innerHTML = "☰";
+    }
 });
